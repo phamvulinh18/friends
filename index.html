@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving button | Jessica</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="wrapper">
+        <h2 class="question">Mày sẽ cho taoo 500k chứ</h2> 
+        <img class="gif" alt="gif" src="https://media.giphy.com/media/2mzRDsekJ4VqZIa2Cd/giphy.gif"/>
+        <div class="btn-group">
+            <button class="yes-btn">Tất nhinn rồi </button>
+            <button class="no-btn">Không bao giờ</button>
+        </div>
+        <!-- Thêm phần tử h3 cần ẩn -->
+        <h3 class="question" id="confirmation">không chọn hoặc thoát là cũng đồng ý đấy nhóo</h3> 
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // Lấy nút "Đúng rồi" và phần tử cần ẩn
+        const yesBtn = document.querySelector(".yes-btn");
+        const confirmation = document.querySelector("#confirmation");
+
+        // Thêm sự kiện click cho nút "Đúng rồi"
+        yesBtn.addEventListener("click", () => {
+            // Ẩn phần tử h3
+            confirmation.style.display = "none";
+        });
+    </script>
+</body>
+</html>
